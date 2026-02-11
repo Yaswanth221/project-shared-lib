@@ -1,11 +1,11 @@
 def call() {
   return [
-    enabled: true, // set false to see sonar disabled
+    enabled: true,
     sonarqube: [
-      sonarqube_url: "http://localhost:9000"
+      sonarqube_url: "http://sonarqube:9000"
     ],
-    fail_build_qualitycheck: false,
+    fail_build_qualitycheck: true,
     skip_build: false,
-    fail_execution_failure: false
+    fail_execution_failure: true
   ]
 }
